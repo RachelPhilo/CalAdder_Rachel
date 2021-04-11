@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>CalAdder</title>
+
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    
+
+<!-- /Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light sticky-top py-3">
+            <div class="container-fluid">
+                <button type="button" id="sidebarCollapse" class="btn navbar-btn">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <h5 style="margin-right: 87%;margin-top: 6px;font-weight: bolder;color: #8bdd54;">CalAdder</h5> 
+                
+
+            </div>
+        </nav>
+        <!-- /Navbar -->
+        
+        <div class="wrapper">
+
+        <!-- Page Content  -->
+
+        <div id="content">
+            <h3 class="text-center text-success ">Hey,Welcome !</h3>
+            <h3 class="text-center text-success">Login to access food diary!!</h3>
+            <div class="container">
+                <div id="login-row" class="row justify-content-center align-items-center">
+                  <div class="col-lg-3"></div>
+                    <div id="login-column" class="col-lg-6">
+                        <div id="login-box" class="col-md-12">
+                          
+                            <form id="login-form" class="form" style="margin-right: 17%;
+                            margin-top: 12px;"  method="get">
+                                <!-- <h3 class="text-center text-info">Login</h3> -->
+                                <div class="form-group">
+                                    <label for="username" class="text">Username:</label><br>
+                                    <input type="text" name="username" id="username" class="form-control">
+          
+                                </div>
+                                <div class="form-group">
+                                    <label for="password" class="text">Password:</label><br>
+                                    <input type="password" name="password" id="password" class="form-control">
+                                </div>
+                                <div id="error" class="text-warning font-weight-bold"></div>
+                                <br>
+                                <div class="form-group">
+                                    <label for="remember-me" class="text"><span>Remember me</span> <span><input id="remember-me" name="remember-me" type="checkbox"></span></label><br>
+                                    <input type="submit" name="submit" class="btn btn-success" value="Submit">
+        
+                                </div>
+                                <div id="register-link" class="text-right">
+                                  Don't have an account?<a href="#" class="text-danger"> Sign Up</a>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-lg-2"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+<footer class="page-footer font-small">
+  <!-- Copyright -->
+  <div class="footer-copyright text-center bg-success py-1">© 2021 Copyright :
+    <a href="#"> CalAdder.com</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->
+
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <!-- <script type="text/javascript">
+        $(document).ready(function () {
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').toggleClass('active');
+            });
+        });
+    </script> -->
+</body>
+
+</html>

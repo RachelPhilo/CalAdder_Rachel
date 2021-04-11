@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>CalAdder</title>
+
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    
+
+<!-- /Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light sticky-top py-3">
+            <div class="container-fluid">
+                <button type="button" id="sidebarCollapse" class="btn navbar-btn">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <h5 style="margin-right: 87%;margin-top: 6px;font-weight: bolder;color: #8bdd54;">CalAdder</h5> 
+                
+
+            </div>
+        </nav>
+        <!-- /Navbar -->
+        
+        <div class="wrapper">
+
+            
+                <div class="form-header text-success font-weight-bolder">
+                    <h2>Create Account</h2>
+                </div>
+                <div class="form-container">
+                <form id="form" class="Signup-form">
+
+                    <div class="Sform-checkboxes">
+                        <label for="goal">What is your goal?</label>
+                        <br>
+                        <label for="remember-me" class="text"><span><input type="checkbox">  </span><span>Lose Weight</span> </label>
+                        <br>
+                        <label for="remember-me" class="text"><span><input type="checkbox">  </span><span>Maintain Weight</span> </label>
+                        <br>
+                        <label for="remember-me" class="text"><span><input type="checkbox">  </span><span>Gain Weight</span> </label>
+                    </div>
+
+                    <div class="Sform-checkboxes">
+                        <label for="goal">What is your level of activity?</label>
+                        <br>
+                        <label for="remember-me" class="text"><span><input  type="checkbox">  </span><span>Not very</span> </label>
+                        <br>
+                        <label for="remember-me" class="text"><span><input  type="checkbox">  </span><span>Lightly</span> </label>
+                        <br>
+                        <label for="remember-me" class="text"><span><input type="checkbox">  </span><span>Active</span> </label>
+                        <br>
+                        <label for="remember-me" class="text"><span><input  type="checkbox">  </span><span>Very Active</span> </label>
+                    </div>
+
+                    <div class="Sform-checkboxes">
+                        <label for="goal">Gender?</label>
+                        <br>
+                        <label for="remember-me" class="text"><span><input  type="checkbox">  </span><span>Male</span> </label>
+                        <br>
+                        <label for="remember-me" class="text"><span><input  type="checkbox">  </span><span>Female</span> </label>
+                        <br>
+                        <label for="remember-me" class="text"><span><input  type="checkbox">  </span><span>Other</span> </label>
+                    </div>
+
+                    <div class="Sform-control">
+                        <label for="DOB">Date of Birth</label>
+                        <input type="input" placeholder="Date of Birth">
+                        <i class="fa fa-check-circle"></i>
+                        <i class="fa fa-exclamation-circle"></i>
+                        <small>Error Message</small>
+                    </div>
+
+                    <div class="Sform-control">
+                        <label for="Country">Country</label>
+                        <input type="input" placeholder="Country">
+                        <i class="fa fa-check-circle"></i>
+                        <i class="fa fa-exclamation-circle"></i>
+                        <small>Error Message</small>
+                    </div>
+                    <div class="Sform-control">
+                        <label for="Height">Height</label>
+                        <input type="input" placeholder="Height (in cms)">
+                        <i class="fa fa-check-circle"></i>
+                        <i class="fa fa-exclamation-circle"></i>
+                        <small>Error Message</small>
+                    </div>
+                    <div class="Sform-control">
+                        <label for="Weight">Weight</label>
+                        <input type="input" placeholder="Weight (in kgs)">
+                        <i class="fa fa-check-circle"></i>
+                        <i class="fa fa-exclamation-circle"></i>
+                        <small>Error Message</small>
+                    </div>
+
+                    <div class="Sform-control">
+                        <label for="Goal Weight">Goal Weight</label>
+                        <input type="input" placeholder="Goal Weight (in kgs)">
+                        <i class="fa fa-check-circle"></i>
+                        <i class="fa fa-exclamation-circle"></i>
+                        <small>Error Message</small>
+                    </div>
+
+
+                    <div class="Sform-control">
+                        <label for="username">Username</label>
+                        <input type="text" placeholder="John" id="username">
+                        <i class="fa fa-check-circle"></i>
+                        <i class="fa fa-exclamation-circle"></i>
+                        <small>Error Message</small>
+                    </div>
+              
+                    <div class="Sform-control">
+                        <label for="Email">Email</label>
+                        <input type="email" placeholder="john@sample.com" id="email">
+                        <i class="fa fa-check-circle"></i>
+                        <i class="fa fa-exclamation-circle"></i>
+                        <small>Error Message</small>
+                    </div>
+              
+                    <div class="Sform-control">
+                        <label for="username">Password</label>
+                        <input type="password" placeholder="Password" id="password">
+                        <i class="fa fa-check-circle"></i>
+                        <i class="fa fa-exclamation-circle"></i>
+                        <small>Error Message</small>
+                    </div>
+              
+                    <div class="Sform-control">
+                        <label for="username">Confirm Password</label>
+                        <input type="password" placeholder="Re-enter Password" id="password2">
+                        <i class="fa fa-check-circle"></i>
+                        <i class="fa fa-exclamation-circle"></i>
+                        <small>Error Message</small>
+                    </div>
+
+                    <button type="submit" class="btn btn-success btn-md">Submit</button>
+                    <div class="form-check form-group d-flex justify-content-end">
+                      Already have an account? <a href="/" class="text-danger">Sign In</a>
+                  </div>
+                </form>
+            </div>
+              
+              
+    </div>
+    <!-- Footer -->
+<footer class="page-footer font-small">
+  <!-- Copyright -->
+  <div class="footer-copyright text-center bg-success py-1">© 2021 Copyright :
+    <a href="#"> CalAdder.com</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->
+
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <!-- <script type="text/javascript">
+        $(document).ready(function () {
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').toggleClass('active');
+            });
+        });
+    </script> -->
+</body>
+
+</html>
