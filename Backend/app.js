@@ -1,10 +1,14 @@
 var createError = require('http-errors');
-var express = require('express');
+var userModel=require('./models/users.model');
+const cros=require('cros');
+// var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
+var bodyparser=require('body-parser');
 
 var mongoose = require('mongoose');
+
 mongoose.connect('mongodb://localhost:27017/CalAdder');
 
 var indexRouter = require('./routes/index');
@@ -23,10 +27,11 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+app.use(cros());
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
-
+app.use('/meals',mealsRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

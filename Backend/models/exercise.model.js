@@ -1,10 +1,7 @@
 const mongoose =require('mongoose');
 
 const exerciseSchema = mongoose.Schema({
-
-    exerciseId:Number,
-    userId:Number,
-    typeId:Number,
+    type:String,
     duration:Number,
     caloriesLost:Number
 });

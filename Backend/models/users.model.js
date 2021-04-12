@@ -1,6 +1,7 @@
 const mongoose =require('mongoose');
+mongoose.connect('mongodb://localhost:27017/CalAdder');
 
-const userSchema = mongoose.Schema({
+const userSchema = new mongoose.Schema({
 
     username:String,
     email:String,

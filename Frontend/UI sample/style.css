@@ -279,3 +279,21 @@ ul ul a {
     height: 700;
     border: 1px solid black;
 }
+
+.table 
+{
+    display:table;
+}
+
+
+FORM.tr, DIV.tr
+{
+    display:table-row;
+}
+SPAN.td
+{
+    display:table-cell;
+    padding: 8px 0px;
+    font-weight: 500;
+    color: #319431;
+}

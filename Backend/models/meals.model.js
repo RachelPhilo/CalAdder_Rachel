@@ -1,15 +1,10 @@
 const mongoose =require('mongoose');
 
 const mealSchema = mongoose.Schema({
-
-    mealId:Number,
-    userId:Number,
     time:String,
     category:String,
-    itemId:Number,
     quantity:Number,
-    calorieConsumed:Number,
-    mealDate:Date
+    calorieConsumed:Number
 });
 
 const mealModel = mongoose.model('meals',mealSchema);

@@ -10,7 +10,7 @@ const routes: Routes = [
 {path:'login',component:LoginComponent},
 {path:'logout',component:LogoutComponent},
 {path:'register',component:NewUserComponent},
-{path:'dashboard',component:DashboardComponent},
+{path:'',component:DashboardComponent},
 
 { path: 'users', loadChildren: () => import('./users/users.module').then(m => m.UsersModule) }, 
 { path: 'meals', loadChildren: () => import('./meals/meals.module').then(m => m.MealsModule) }, 
